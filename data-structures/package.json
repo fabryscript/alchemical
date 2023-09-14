@@ -1,8 +1,9 @@
 {
-  "name": "data-structures",
+  "name": "@fabryscript/data-structures",
   "version": "0.0.1",
   "dependencies": {},
   "type": "commonjs",
   "main": "./index.cjs",
-  "module": "./index.js"
+  "module": "./index.js",
+  "private": false
 }
