@@ -1,9 +1,25 @@
 {
   "name": "@fabryscript/data-structures",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "dependencies": {},
   "type": "commonjs",
   "main": "./index.cjs",
   "module": "./index.js",
-  "private": false
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabryscript/alchemical.git"
+  },
+  "keywords": [
+    "utilities",
+    "alchemical",
+    "data-structures",
+    "objects",
+    "stack",
+    "queue",
+    "hash",
+    "hash-table",
+    "algorithms"
+  ]
 }
