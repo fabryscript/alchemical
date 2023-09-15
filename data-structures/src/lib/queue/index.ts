@@ -73,6 +73,21 @@ export class Queue {
   }
 
   /**
+   * Retrieves the element at the front of the queue without removing it.
+   *
+   * @returns {any} The element at the front of the queue.
+   *
+   * @example
+   * const queue = new Queue();
+   * queue.push(1);
+   * queue.push(2);
+   * const frontItem = queue.peek(); // Returns 1
+   */
+  peek(): any {
+    return this.head?.data;
+  }
+
+  /**
    * Returns the current size of the queue.
    * @returns {number} The number of elements in the queue.
    * @example
