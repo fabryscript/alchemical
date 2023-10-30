@@ -1,0 +1,40 @@
+{
+  "name": "algorithms",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "algorithms/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/algorithms",
+        "main": "algorithms/src/index.ts",
+        "tsConfig": "algorithms/tsconfig.lib.json",
+        "assets": ["algorithms/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["algorithms/**/*.ts", "algorithms/package.json"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "algorithms/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

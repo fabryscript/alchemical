@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "algorithms": ["algorithms/src/index.ts"],
       "data-structures": ["data-structures/src/index.ts"]
     }
   },
