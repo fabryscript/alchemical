@@ -1,10 +1,21 @@
 {
-  "name": "algorithms",
+  "name": "@fabryscript/algorithms",
   "version": "0.0.1",
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
+  "dependencies": {},
   "type": "commonjs",
-  "main": "./src/index.js",
-  "typings": "./src/index.d.ts"
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabryscript/alchemical.git"
+  },
+  "keywords": [
+    "utilities",
+    "alchemical",
+    "algorithms",
+    "objects",
+    "keys"
+  ]
 }
